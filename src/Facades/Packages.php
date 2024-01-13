@@ -5,7 +5,7 @@ namespace MadeForYou\Helpers\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method bool usesPackages(string $name)
+ * @method bool uses(string $name)
  */
 class Packages extends Facade
 {

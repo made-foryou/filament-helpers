@@ -11,7 +11,7 @@ class Packages
         'news' => 'MadeForYou\\News\\NewsPlugin',
     ];
 
-    public function usesPackage(string $name): bool
+    public function uses(string $name): bool
     {
         return Container::getInstance()->resolved(
             self::PACKAGES[$name]
