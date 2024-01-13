@@ -1,0 +1,27 @@
+{
+    "name": "made-foryou/filament-helpers",
+    "description": "Helpers for the development of projects with the filament packages.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Menno Tempelaar",
+            "email": "menno@made-foryou.nl",
+            "role": "development"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "MadeForYou\\Helpers\\": "src/"
+        }
+    },
+    "require": {
+        "php": "~8.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.20",
+        "laravel/pint": "^1.13"
+    }
+}
