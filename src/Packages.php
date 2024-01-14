@@ -6,6 +6,9 @@ use Illuminate\Container\Container;
 
 class Packages
 {
+    const PACKAGE_CATEGORY = 'category';
+    const PACAKGE_NEWS = 'news';
+
     const PACKAGES = [
         'category' => 'MadeForYou\\Categories\\FilamentCategoriesPlugin',
         'news' => 'MadeForYou\\News\\NewsPlugin',
