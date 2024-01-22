@@ -13,6 +13,7 @@ enum FilamentPackage: string
 {
     case News = 'news';
     case Category = 'categories';
+    case Content = 'content';
 
     /**
      * Returns the plugin namespace based on the given value of $this.
@@ -23,7 +24,8 @@ enum FilamentPackage: string
     {
         return match ($this) {
             self::News => 'MadeForYou\\News\\NewsPlugin',
-            self::Category => 'MadeForYou\\Categories\\FilamentCategoriesPlugin'
+            self::Category => 'MadeForYou\\Categories\\FilamentCategoriesPlugin',
+            self::Content => 'MadeForYou\\FilamentContent\\FilamentContentServiceProvider',
         };
     }
 }
