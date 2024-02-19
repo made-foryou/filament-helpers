@@ -10,7 +10,7 @@ class Generate
     public function filamentLink(
         string $link,
         string $title,
-        ?string $tooltip
+        ?string $tooltip = null,
     ): HtmlString {
         return new HtmlString(Blade::render('filament::components.link', [
             'color' => 'primary',
