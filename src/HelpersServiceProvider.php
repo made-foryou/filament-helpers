@@ -12,10 +12,20 @@ class HelpersServiceProvider extends PackageServiceProvider
         $package->name('filament-helpers');
     }
 
-    public function registeringPackage()
+    public function registeringPackage(): void
     {
-        $this->app->bind('packages', function ($app) {
-            return new Packages();
-        });
+        $this->app->bind(
+            'packages',
+            function ($app) {
+                return new Packages();
+            }
+        );
+
+        $this->app->bind(
+            \MadeForYou\Helpers\Facades\Generate::$key,
+            function ($app) {
+                return new Generate();
+            }
+        );
     }
 }
