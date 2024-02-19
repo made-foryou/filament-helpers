@@ -23,8 +23,8 @@ enum FilamentPackage: string
     public function plugin(): string
     {
         return match ($this) {
-            self::News => 'MadeForYou\\News\\NewsPlugin',
-            self::Category => 'MadeForYou\\Categories\\FilamentCategoriesPlugin',
+            self::News => 'MadeForYou\\News\\NewsServiceProvider',
+            self::Category => 'MadeForYou\\Categories\\FilamentCategoriesServiceProvider',
             self::Content => 'MadeForYou\\FilamentContent\\FilamentContentServiceProvider',
         };
     }
