@@ -31,7 +31,8 @@
                 "MadeForYou\\Helpers\\HelpersServiceProvider"
             ],
             "aliases": {
-                "Packages": "MadeForYou\\Helpers\\Facades\\Packages"
+                "Packages": "MadeForYou\\Helpers\\Facades\\Packages",
+                "Generate": "MadeForYou\\Helpers\\Facades\\Generate"
             }
         }
     }
