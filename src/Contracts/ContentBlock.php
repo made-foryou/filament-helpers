@@ -2,14 +2,14 @@
 
 namespace MadeForYou\Helpers\Contracts;
 
-use Illuminate\Contracts\View\View;
 use Filament\Forms\Components\Builder\Block;
+use Illuminate\Contracts\View\View;
 
 interface ContentBlock
 {
-    public function getBlock(): Block;
+    public static function getBlock(): Block;
 
-    public function render(): View;
+    public static function render(?array $data = null): View;
 
     public static function id(): string;
 }
