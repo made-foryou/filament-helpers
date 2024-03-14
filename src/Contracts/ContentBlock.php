@@ -7,9 +7,11 @@ use Illuminate\Contracts\View\View;
 
 interface ContentBlock
 {
+    public function __construct(array $data = []);
+
     public static function getBlock(): Block;
 
-    public static function render(?array $data = null): View;
+    public function render(): View;
 
     public static function id(): string;
 }
