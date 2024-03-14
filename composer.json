@@ -2,7 +2,7 @@
     "name": "made-foryou/filament-helpers",
     "description": "Helpers for the development of projects with the filament packages.",
     "license": "MIT",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "authors": [
         {
             "name": "Menno Tempelaar",
